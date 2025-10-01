@@ -1,10 +1,10 @@
 theme = "dot-hugo"
-timeZone = "America/New_York"
-hasCJKLanguage = false
 summaryLength = 10
 baseURL = "https://demo.gethugothemes.com/dot/site/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
+hasCJKLanguage = false
+timeZone = "America/New_York"
 title = "Dot"
 disableLanguages = []
 
@@ -65,22 +65,9 @@ startLevel = 2
 endLevel = 5
 ordered = true
 
-[outputs]
-home = [ "HTML", "RSS", "WebAppManifest", "SearchIndex" ]
-
-[services]
-[services.disqus]
-shortname = "themefisher-template"
-
-[services.googleAnalytics]
-ID = "G-MEASUREMENT_ID"
-
-[pagination]
-pagerSize = 2
-
-[permalinks]
-[permalinks.page]
-pages = "/:slugorcontentbasename/"
+[mediaTypes]
+[mediaTypes."application/manifest+json"]
+suffixes = [ "webmanifest" ]
 
 [module]
 [[module.mounts]]
@@ -90,10 +77,6 @@ target = "assets"
 [[module.mounts]]
 source = "hugo_stats.json"
 target = "assets/watching/hugo_stats.json"
-
-[mediaTypes]
-[mediaTypes."application/manifest+json"]
-suffixes = [ "webmanifest" ]
 
 [outputFormats]
 [outputFormats.WebAppManifest]
@@ -106,10 +89,24 @@ baseName = "searchindex"
 isPlainText = true
 notAlternative = true
 
+[outputs]
+home = [ "HTML", "RSS", "WebAppManifest", "SearchIndex" ]
+
+[services]
+[services.disqus]
+shortname = "themefisher-template"
+
+[services.googleAnalytics]
+ID = "G-MEASUREMENT_ID"
+
 [params]
 [params.variables]
-color_primary = "#02007e"
 body_color = "#f9f9f9"
+color_primary = "#02007e"
+font_primary = "Lato:wght@300;400;700"
+font_primary_type = "sans-serif"
+font_scale = "1.17"
+font_size = "16px"
 text_color = "#636363"
 text_dark = "#242738"
 text_light = "#f8f9fa"
@@ -117,10 +114,6 @@ black = "#000"
 white = "#fff"
 dark = "#222"
 light = "#eee"
-font_size = "16px"
-font_scale = "1.17"
-font_primary = "Lato:wght@300;400;700"
-font_primary_type = "sans-serif"
 font_secondary = ""
 font_secondary_type = ""
 font_icon = "Font Awesome 6 Free"
@@ -150,3 +143,10 @@ link = "plugins/lazy-loader.js"
 [[params.plugins.js]]
 link = "https://cpwebassets.codepen.io/assets/embed/ei.js"
 attributes = "async"
+
+[pagination]
+pagerSize = 2
+
+[permalinks]
+[permalinks.page]
+pages = "/:slugorcontentbasename/"

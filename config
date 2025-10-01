@@ -1,245 +1,83 @@
-["_default/languages"]
-["_default/languages"."toml/en"]
-languageName = "En"
-languageCode = "en-us"
-weight = 1
-
-["_default/languages"."toml/fr"]
-languageName = "Fr"
-languageCode = "fr-fr"
-weight = 2
-
-["_default/menus"]
-["_default/menus".en]
-[["_default/menus".en."toml/main"]]
-name = "Home"
-url = ""
-weight = 1
-
-[["_default/menus".en."toml/main"]]
-name = "Faq"
-url = "faq/"
-weight = 2
-
-[["_default/menus".en."toml/main"]]
-name = "contact"
-url = "contact/"
-weight = 3
-
-[["_default/menus".en."toml/main"]]
-weight = 4
-name = "docs"
-hasChildren = true
-
-[["_default/menus".en."toml/main"]]
-parent = "docs"
-name = "Installation"
-url = "installation/"
-weight = 1
-
-[["_default/menus".en."toml/main"]]
-parent = "docs"
-name = "Billing and Pricing"
-url = "billing-pricing/"
-weight = 2
-
-[["_default/menus".en."toml/main"]]
-parent = "docs"
-name = "Features"
-url = "features/"
-weight = 3
-
-["_default/menus".fr]
-[["_default/menus".fr."toml/main"]]
-name = "Accueil"
-url = ""
-weight = 1
-
-[["_default/menus".fr."toml/main"]]
-name = "Faq"
-url = "faq/"
-weight = 2
-
-[["_default/menus".fr."toml/main"]]
-name = "contact"
-url = "contact/"
-weight = 3
-
-[["_default/menus".fr."toml/main"]]
-weight = 4
-name = "docs"
-hasChildren = true
-
-[["_default/menus".fr."toml/main"]]
-parent = "docs"
-name = "Installation"
-url = "installation/"
-weight = 1
-
-[["_default/menus".fr."toml/main"]]
-parent = "docs"
-name = "Billing and Pricing"
-url = "billing-pricing/"
-weight = 2
-
-[["_default/menus".fr."toml/main"]]
-parent = "docs"
-name = "Features"
-url = "features/"
-weight = 3
-
 ["_default/module"]
+"toml/imports" = []
+
 ["_default/module"."toml/hugoVersion"]
-extended = true
-min = "0.147.2"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/search"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/components/preloader"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/components/social-share"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/components/cookie-consent"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/components/custom-script"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/components/render-link"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/icons/themify-icons"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/components/valine-comment"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/components/crisp-chat"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/pwa"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/images"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/buttons"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/codepen"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/collapse"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/notice"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/video"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/tabs"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/gallery"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/table-of-contents"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/seo-tools/site-verifications"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/seo-tools/basic-seo"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/gzip-caching"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/adsense"
-
-[["_default/module"."toml/imports"]]
-path = "github.com/gethugothemes/hugo-modules/videos"
 
 ["_default/params"]
+"toml/custom_script" = ""
+"toml/image_gallery" = true
+"toml/purge_css" = true
 "toml/favicon" = "images/favicon.png"
 "toml/logo" = ""
-"toml/logo_width" = "100px"
-"toml/logo_webp" = true
 "toml/logo_text" = "Dot"
+"toml/logo_webp" = true
+"toml/logo_width" = "100px"
 "toml/contact_form_action" = "#"
-"toml/google_tag_manager" = ""
-"toml/google_adsense" = ""
-"toml/purge_css" = true
-"toml/image_gallery" = true
-"toml/custom_script" = ""
-"toml/theme_copyright" = true
 "toml/copyright" = "Copyright by your company"
+"toml/theme_copyright" = true
+"toml/google_adsense" = ""
+"toml/google_tag_manager" = ""
 
-["_default/params"."toml/contact_info"]
-address = "9567 Turner Trace Apt. BC C3G8A4"
-mobile = "+211234565523"
-email = "info@email.com"
+["_default/params"."toml/cookies"]
+button = "I Accept"
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+enable = true
+expire_days = 2
+
+["_default/params"."toml/crisp_chat"]
+crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d"
+enable = false
+
+["_default/params"."toml/preloader"]
+enable = true
 
 ["_default/params"."toml/search"]
 enable = true
 primary_color = "#02007e"
-include_all_sections = true
 show_image = false
 
-["_default/params"."toml/preloader"]
-enable = true
-preloader = ""
-
-["_default/params"."toml/crisp_chat"]
-enable = false
-crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d"
-
 ["_default/params"."toml/metadata"]
-keywords = [ "Boilerplate", "Hugo", "Themefisher", "GetHugoThemes" ]
-description = "This is meta description"
 author = "Themefisher"
+description = "This is meta description"
 image = "images/favicon.png"
+keywords = [ "Boilerplate", "Hugo", "Themefisher", "GetHugoThemes" ]
 
 ["_default/params"."toml/site_verification"]
-google = ""
 bing = ""
-baidu = ""
-facebook = ""
-mastodon = ""
+google = ""
 
-["_default/params"."toml/cookies"]
-enable = true
-expire_days = 2
-content = "This site uses cookies. By continuing to use this website, you agree to their use."
-button = "I Accept"
+["_default/params"."toml/contact_info"]
+address = "9567 Turner Trace Apt. BC C3G8A4"
+email = "info@email.com"
+mobile = "+211234565523"
 
 [["_default/params"."toml/social"]]
-title = "facebook"
 icon = "ti-facebook"
 link = "#"
+title = "facebook"
 
 [["_default/params"."toml/social"]]
-title = "twitter"
 icon = "ti-twitter-alt"
 link = "#"
+title = "twitter"
 
 [["_default/params"."toml/social"]]
-title = "github"
 icon = "ti-github"
 link = "#"
+title = "github"
 
 [["_default/params"."toml/social"]]
-title = "linkedin"
 icon = "ti-linkedin"
 link = "#"
+title = "linkedin"
+
+["_default/languages"]
+["_default/languages"."toml/en"]
+languageCode = "en-us"
+languageName = "En"
+weight = 1
+
+["_default/languages"."toml/fr"]
+languageCode = "fr-fr"
+languageName = "Fr"
+weight = 2
