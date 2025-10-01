@@ -1,0 +1,84 @@
+custom_script = ""
+favicon = "images/favicon.png"
+logo = ""
+logo_webp = true
+logo_width = "100px"
+image_gallery = true
+purge_css = true
+copyright = "Copyright by your company"
+logo_text = "Dot"
+theme_copyright = true
+google_adsense = ""
+google_tag_manager = ""
+contact_form_action = "#"
+
+[cookies]
+button = "I Accept"
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+enable = true
+expire_days = 2
+
+[crisp_chat]
+crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d"
+enable = false
+
+[search]
+enable = true
+include_all_sections = true
+primary_color = "#02007e"
+show_image = false
+
+[preloader]
+enable = true
+preloader = ""
+
+[variables]
+body_color = "#f9f9f9"
+color_primary = "#02007e"
+font_primary = "Lato:wght@300;400;700"
+font_primary_type = "sans-serif"
+font_scale = "1.17"
+font_secondary = ""
+font_secondary_type = ""
+font_size = "16px"
+text_color = "#636363"
+text_dark = "#242738"
+text_light = "#f8f9fa"
+
+[metadata]
+author = "Themefisher"
+description = "This is meta description"
+image = "images/favicon.png"
+keywords = [ "Boilerplate", "Hugo", "Themefisher", "GetHugoThemes" ]
+
+[site_verification]
+baidu = ""
+bing = ""
+facebook = ""
+google = ""
+mastodon = ""
+
+[contact_info]
+address = "9567 Turner Trace Apt. BC C3G8A4"
+email = "info@email.com"
+mobile = "+211234565523"
+
+[[social]]
+icon = "ti-facebook"
+link = "#"
+title = "facebook"
+
+[[social]]
+icon = "ti-twitter-alt"
+link = "#"
+title = "twitter"
+
+[[social]]
+icon = "ti-github"
+link = "#"
+title = "github"
+
+[[social]]
+icon = "ti-linkedin"
+link = "#"
+title = "linkedin"
